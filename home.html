@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentify - Properties</title>
+</head>
+<body>
+  <h1>Rentify - Properties</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Location</th>
+        <th>Area</th>
+        <th>Bedrooms</th>
+        <th>Bathrooms</th>
+        <th>Seller</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ property.location }}</td>
+        <td>{{ property.area }} sq.ft</td>
+        <td>{{ property.bedrooms }}</td>
+        <td>{{ property.bathrooms }}</td>
+        <td>{{ property.seller.firstName }} {{ property.seller.lastName }}</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>
